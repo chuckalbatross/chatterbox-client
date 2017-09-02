@@ -84,9 +84,9 @@ app.clearMessages = function() {
 app.renderMessage = (message) => {
   var element = `<div class=\"messageBox\"><p class=\"messageUser\">${message.username}</p><p class=\"messageText\">${message.text}</p></div>`;
   $('#chats').append(element);
-}
+};
 
 app.renderRoom = (roomName) => {
-  
-}
+
+};
 
