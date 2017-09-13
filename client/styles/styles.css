@@ -6,13 +6,20 @@ body {
 }
 
 #main, #chats {
-    width: 500px;
     margin: auto;
     text-align: left;
     background: white;
     padding: 50px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+}
+
+#main {
+    width: 700px;
+}
+
+#chats {
+    width: 600px;
 }
 
 #main h1 {
@@ -87,4 +94,20 @@ form input[type=text] {
     color: #fff;
     background-color: #0090da;
 }
+
+.messageBox {
+    background-color: #D3D3D3;
+    margin: 20px;
+}
+
+
+p.username {
+    font-weight: bold;
+}
+
+
+
+
+
+
 

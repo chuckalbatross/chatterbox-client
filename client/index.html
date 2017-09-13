@@ -27,8 +27,47 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+
+
+      <!-- ON SELECT OF ROOM, CALL CLEAR MESSAGES? OR FOR EACH NOT SELECTED $(.LOBBY).HIDE() (CHANGE TO HIDE) -->
+      <div id="rooms">Room:
+        <select id="roomSelect">
+          <option value="Lobby">Lobby</option>
+        </select>
+      </div>
+
+      <form action="#" id="addRoom" method="post">
+        <input type="text" name="room" id="room"/>
+        <input type="button" name="submitRoom" class="submitRoom" value="Add Room"/>
+      </form>
+
+
+      <!-- FORM BUTTON IS TIED TO PARENT FORM. WHEN YOU SUBMIT -->
+      <form action="#" id="sendMessage" method="post">
+        <input type="text" name="message" id="message"/>
+        <input type="button" name="submitMessage" class="submitMessage" value="Submit Message" />
+        <!-- <button  type="submit" id="submitUniq" name="submit">Submit</button> -->
+      </form>
+
+
+      <div id="chats"></div>
     </div>
-    <div id="chats"></div>
+    <script>
+      (function() {
+        app.init();
+      })();
+    </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
